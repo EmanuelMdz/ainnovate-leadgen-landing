@@ -19,13 +19,14 @@ function OfferSection() {
       { threshold: 0.5 }
     );
 
-    if (numberRef.current) {
-      observer.observe(numberRef.current);
+    const currentRef = numberRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (numberRef.current) {
-        observer.unobserve(numberRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, [hasAnimated]);
@@ -71,39 +72,6 @@ function OfferSection() {
           <div className="result-text">
             <h3>Emails hiperpersonalizados enviados en 6 meses</h3>
             <p>Nuestro sistema filtra, responde y entrega solo leads interesados. Vos no tenés que contestar nada. Solo te subís a la llamada.</p>
-          </div>
-        </div>
-        
-        <div className="features-list">
-          <div className="feature-item">
-            <div className="feature-icon">⚙️</div>
-            <span>Configuración técnica completa DFY</span>
-          </div>
-          <div className="feature-item">
-            <div className="feature-icon">🎯</div>
-            <span>Base de datos personalizada para tu cliente ideal</span>
-          </div>
-          <div className="feature-item">
-            <div className="feature-icon">📧</div>
-            <span>+36,000 correos enviados en 6 meses</span>
-          </div>
-          <div className="feature-item">
-            <div className="feature-icon">✨</div>
-            <span>Solo leads calificados con contexto completo</span>
-          </div>
-          <div className="feature-item">
-            <div className="feature-icon">📊</div>
-            <span>Reportes semanales con métricas clave</span>
-          </div>
-          <div className="feature-item">
-            <div className="feature-icon">⏱️</div>
-            <span>Setup completo en 15-20 días</span>
-          </div>
-        </div>
-        <div className="centered-feature">
-          <div className="feature-item">
-            <div className="feature-icon">🤖</div>
-            <span>IA que responde automáticamente en tu nombre</span>
           </div>
         </div>
       </div>

@@ -1,0 +1,283 @@
+.about-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  position: relative;
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/public/Dashboard\ Card\ Ainnovate\ \(Fondo\ de\ pantalla\).png') center/cover;
+  opacity: 0.05;
+  z-index: 0;
+}
+
+.about-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 0 20px;
+}
+
+.about-image {
+  flex: 0 0 400px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+.about-title {
+  font-family: 'Europa Grotesk', 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #130073;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.about-description p {
+  font-size: 1.2rem;
+  color: #374151;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.about-description p:last-child {
+  margin-bottom: 0;
+}
+
+.team-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-title {
+  font-family: 'Europa Grotesk', 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #130073;
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 1.2;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.team-member {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-member::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #130073 0%, #0043fd 100%);
+}
+
+.team-member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(19, 0, 115, 0.15);
+}
+
+.member-photo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #f1f5f9;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.member-photo:hover {
+  border-color: #130073;
+  transform: scale(1.05);
+}
+
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+}
+
+.member-name {
+  font-family: 'Europa Grotesk', 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #130073;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.member-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0043fd;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.member-description {
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 8px;
+}
+
+.social-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.social-link.linkedin:hover {
+  background: #0077b5;
+  border-color: #0077b5;
+}
+
+.social-link.linkedin:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.social-link.youtube:hover {
+  background: #ff0000;
+  border-color: #ff0000;
+}
+
+.social-link.youtube:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.social-link.instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border-color: #bc1888;
+}
+
+.social-link.instagram:hover img {
+  filter: brightness(0) invert(1);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 0;
+  }
+  
+  .about-content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .about-image {
+    flex: none;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .about-text {
+    text-align: center;
+  }
+  
+  .about-title {
+    font-size: 2.2rem;
+  }
+  
+  .about-description p {
+    font-size: 1.1rem;
+  }
+  
+  .team-title {
+    font-size: 2rem;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 15px;
+  }
+  
+  .team-member {
+    padding: 30px 25px;
+  }
+  
+  .member-photo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .member-name {
+    font-size: 1.2rem;
+  }
+  
+  .member-description {
+    font-size: 0.9rem;
+  }
+}

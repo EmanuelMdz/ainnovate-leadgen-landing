@@ -5,6 +5,7 @@ import ProblemSection from './components/ProblemSection/ProblemSection';
 import SolutionSection from './components/SolutionSection/SolutionSection';
 import DifferentialSection from './components/DifferentialSection/DifferentialSection';
 import OfferSection from './components/OfferSection/OfferSection';
+import AboutSection from './components/AboutSection/AboutSection';
 import GuaranteeSection from './components/GuaranteeSection/GuaranteeSection';
 import UrgencySection from './components/UrgencySection/UrgencySection';
 import FinalCTASection from './components/FinalCTASection/FinalCTASection';
@@ -21,6 +22,7 @@ function HomePage() {
       <SolutionSection />
       <DifferentialSection />
       <OfferSection />
+      <AboutSection />
       <GuaranteeSection />
       <UrgencySection />
       <FinalCTASection />

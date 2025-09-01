@@ -108,6 +108,8 @@
 
 .problem-icon {
   margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
 }
 
 .problem-icon img {
