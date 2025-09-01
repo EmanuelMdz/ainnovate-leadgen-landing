@@ -1,4 +1,5 @@
 /* main.css - Global styles for Ainnovate Lead Gen Agency */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 /* CSS Reset */
 * {
@@ -42,6 +43,18 @@ h3 {
 
 p {
   margin-bottom: 1rem;
+}
+
+/* Secondary text to Montserrat */
+p,
+.main-nav a,
+.btn,
+.hero__description,
+.hero__subheading,
+.hero__cta,
+.social-icons,
+.text-secondary { /* utility class if needed */
+  font-family: 'Montserrat', 'Arial', sans-serif;
 }
 
 /* Buttons */
