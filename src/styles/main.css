@@ -1,6 +1,88 @@
 /* main.css - Global styles for Ainnovate Lead Gen Agency */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
+/* Europa Grotesk Font */
+@font-face {
+  font-family: 'Europa Grotesk';
+  src: url('../assets/fonts/europa-grotesk-sh-bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Alovera Display Fonts */
+@font-face {
+  font-family: 'Alovera Display';
+  src: url('../../public/fonts/AloeveraDisplay-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alovera Display';
+  src: url('../../public/fonts/AloeveraDisplay-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alovera Display';
+  src: url('../../public/fonts/AloeveraDisplay-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alovera Display';
+  src: url('../../public/fonts/AloeveraDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alovera Display';
+  src: url('../../public/fonts/AloeveraDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alovera Display';
+  src: url('../../public/fonts/AloeveraDisplay-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alovera Display';
+  src: url('../../public/fonts/AloeveraDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alovera Display';
+  src: url('../../public/fonts/AloeveraDisplay-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alovera Display';
+  src: url('../../public/fonts/AloeveraDisplay-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* CSS Reset */
 * {
   margin: 0;
@@ -24,6 +106,7 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Europa Grotesk', 'Montserrat', sans-serif;
   font-weight: 700;
   margin-bottom: 1rem;
   line-height: 1.2;
@@ -45,64 +128,64 @@ p {
   margin-bottom: 1rem;
 }
 
-/* Secondary text to Montserrat */
+/* Secondary text fonts */
 p,
 .main-nav a,
 .btn,
 .hero__description,
 .hero__subheading,
 .hero__cta,
-.social-icons,
-.text-secondary { /* utility class if needed */
-  font-family: 'Montserrat', 'Arial', sans-serif;
+.social-icons {
+  font-family: 'Alovera Display', sans-serif;
 }
 
 /* Buttons */
 .btn {
   display: inline-block;
-  background-color: #007bff;
+  background: linear-gradient(135deg, #0043fd 0%, #130073 100%);
   color: white;
-  padding: 0.8rem 1.5rem;
-  border-radius: 30px;
+  padding: 1rem 2rem;
+  border-radius: 50px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   border: none;
+  box-shadow: 0 8px 25px rgba(19, 0, 115, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(19, 0, 115, 0.4);
 }
 
-.btn-primary {
-  background-color: #007bff;
-}
-
-.btn-secondary {
-  background-color: #6c757d;
+.btn:hover::before {
+  left: 100%;
 }
 
 /* Ainnovate specific colors */
 :root {
-  --ainnovate-blue: #0066ff;
-  --ainnovate-dark-blue: #00216e;
-  --ainnovate-light-blue: #e6f0ff;
+  --primary-blue: #130073;
+  --secondary-blue: #0043fd;
+  --light-background: #e1e1e1;
+  --white-background: #ffffff;
+  --gradient-bg: linear-gradient(135deg, #013bee 0%, #15055f 100%, #1c1c1d 100%);
 }
 
 /* Utilities */
 .text-center {
   text-align: center;
 }
-
-.mt-1 { margin-top: 0.5rem; }
-.mt-2 { margin-top: 1rem; }
-.mt-3 { margin-top: 1.5rem; }
-.mt-4 { margin-top: 2rem; }
-.mt-5 { margin-top: 2.5rem; }
-
-.mb-1 { margin-bottom: 0.5rem; }
-.mb-2 { margin-bottom: 1rem; }
-.mb-3 { margin-bottom: 1.5rem; }
-.mb-4 { margin-bottom: 2rem; }
-.mb-5 { margin-bottom: 2.5rem; }

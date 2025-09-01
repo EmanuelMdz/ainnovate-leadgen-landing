@@ -1,11 +1,12 @@
 /* SECCIÓN SOLUCIÓN */
 .solution-section {
   padding: 100px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #013bee 0%, #15055f 100%, #1c1c1d 100%);
   color: white;
 }
 
 .solution-section .section-title {
+  font-family: 'Europa Grotesk', 'Montserrat', sans-serif;
   color: white;
   font-size: 2.6rem;
   font-weight: 700;
@@ -29,11 +30,6 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
 .solution-pillars {
   display: grid;
@@ -44,17 +40,36 @@
 
 .pillar {
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
   padding: 40px 30px;
-  border-radius: 16px;
+  border-radius: 20px;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease, background 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.pillar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0.8) 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
 .pillar:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.pillar:hover::before {
+  transform: scaleX(1);
 }
 
 .pillar-icon {
@@ -63,7 +78,16 @@
   display: block;
 }
 
+.pillar-icon img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
 .pillar h3 {
+  font-family: 'Europa Grotesk', 'Montserrat', sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 20px;
@@ -82,6 +106,7 @@
   line-height: 1.5;
   position: relative;
   padding-left: 20px;
+  font-family: 'Alovera Display', sans-serif;
 }
 
 .pillar li:before {

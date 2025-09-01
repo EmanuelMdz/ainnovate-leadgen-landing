@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './FinalCTASection.css';
 
 function FinalCTASection() {
+  useEffect(() => {
+    // Load Calendly widget script
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup script when component unmounts
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+    };
+  }, []);
+
   return (
     <section className="final-cta-section">
       <div className="container">
@@ -9,11 +24,15 @@ function FinalCTASection() {
         <p className="cta-subtitle">
           Enviamos +36,000 emails. La IA responde por vos. Vos solo aparecés cuando el lead quiere avanzar.
         </p>
-        <div className="cta-button-container">
-          <a href="https://calendly.com/osm-meet/web" target="_blank" rel="noopener noreferrer" className="btn final-cta-btn">
-            📅 Agenda una llamada gratis
-          </a>
+        
+        <div className="calendly-container">
+          <div 
+            className="calendly-inline-widget" 
+            data-url="https://calendly.com/osm-meet/web" 
+            style={{ minWidth: '320px', height: '700px' }}
+          ></div>
         </div>
+        
         <p className="cta-support">
           En 15 minutos analizamos tu negocio y vemos si es un fit. Sin compromiso.
         </p>

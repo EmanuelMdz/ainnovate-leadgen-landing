@@ -1,18 +1,14 @@
-/* LLAMADA A LA ACCIÓN FINAL */
+/* SECCIÓN CTA FINAL */
 .final-cta-section {
   padding: 120px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #013bee 0%, #15055f 100%, #1c1c1d 100%);;
   color: white;
   text-align: center;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
 .cta-title {
+  font-family: 'Europa Grotesk', 'Montserrat', sans-serif;
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 30px;
@@ -29,29 +25,18 @@
   line-height: 1.5;
 }
 
-.cta-button-container {
-  margin-bottom: 30px;
+.calendly-container {
+  margin: 50px 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.final-cta-btn {
-  display: inline-block;
-  background: #fbbf24;
-  color: #92400e;
-  padding: 20px 50px;
-  font-size: 1.3rem;
-  font-weight: 700;
-  text-decoration: none;
-  border-radius: 50px;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 24px rgba(251, 191, 36, 0.3);
-  border: none;
-  cursor: pointer;
-}
-
-.final-cta-btn:hover {
-  background: #f59e0b;
-  transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(251, 191, 36, 0.4);
+.calendly-inline-widget {
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .cta-support {
@@ -65,5 +50,14 @@
 @media (max-width: 768px) {
   .cta-title {
     font-size: 2.2rem;
+  }
+  
+  .calendly-container {
+    margin: 30px 0;
+    padding: 15px;
+  }
+  
+  .calendly-inline-widget {
+    height: 600px !important;
   }
 }

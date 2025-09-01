@@ -1,60 +1,59 @@
 /* SECCIÓN GARANTÍA */
 .guarantee-section {
-  padding: 100px 0;
-  background: #1e293b;
+  padding-bottom: 100px;
+  background: #ffffff;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
 .guarantee-box {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
+  margin-top: 80px;
   text-align: center;
-  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-  padding: 60px 40px;
-  border-radius: 20px;
-  border: 3px solid #fbbf24;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  background: #ffffff;
+  padding: 40px 60px;
+  border-radius: 24px;
+  border: 2px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   position: relative;
+  transition: all 0.3s ease;
 }
 
-.guarantee-box::before {
-  content: "🛡️";
-  font-size: 4rem;
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #1e293b;
-  padding: 10px 20px;
-  border-radius: 50%;
-  border: 3px solid #fbbf24;
+.guarantee-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-color: #0043fd;
 }
+
+
+.guarantee-icon img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
 
 .guarantee-title {
-  color: white;
+  font-family: 'Europa Grotesk', 'Montserrat', sans-serif;
+  color: #130073;
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 30px;
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 .guarantee-text {
-  color: #e2e8f0;
   font-size: 1.2rem;
   line-height: 1.6;
-  margin-bottom: 20px;
-  font-weight: 500;
+  margin-bottom: 30px;
+  color: #374151;
 }
 
 .guarantee-footer {
-  color: #fbbf24;
-  font-size: 1rem;
+  color: #0043fd;
+  font-size: 1.1rem;
   margin: 0;
+  font-weight: 600;
 }
 
 .guarantee-footer em {
@@ -66,5 +65,18 @@
 @media (max-width: 768px) {
   .guarantee-box {
     padding: 40px 25px;
+  }
+  
+  .guarantee-icon img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .guarantee-title {
+    font-size: 1.8rem;
+  }
+  
+  .guarantee-text {
+    font-size: 1.1rem;
   }
 }

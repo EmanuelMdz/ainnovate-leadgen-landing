@@ -1,125 +1,189 @@
 /* SECCIÓN DIFERENCIAL */
 .differential-section {
   padding: 100px 0;
-  background: white;
+  background: #f8fafc;
+  position: relative;
 }
 
 .differential-section .section-title {
-  color: #2c3e50;
+  font-family: 'Europa Grotesk', 'Montserrat', sans-serif;
+  color: #130073;
   font-size: 2.4rem;
-  margin-bottom: 60px;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 60px;
   line-height: 1.2;
 }
 
-.container {
+.advantages-disadvantages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: 0 auto 60px auto;
 }
 
-.comparison-grid {
-  display: grid;
-  gap: 30px;
-  max-width: 900px;
-  margin: 0 auto;
+.advantages-card,
+.disadvantages-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
-.comparison-item {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 20px;
-  align-items: center;
-  padding: 25px;
-  background: #f8f9fa;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
+.advantages-card:hover,
+.disadvantages-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-.comparison-item:hover {
-  transform: scale(1.02);
-}
-
-.others {
+.card-header {
+  padding: 30px;
   text-align: center;
-  padding: 20px;
-  background: #fee2e2;
-  border-radius: 8px;
-  border-left: 4px solid #ef4444;
+  position: relative;
 }
 
-.others h4 {
-  color: #dc2626;
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-bottom: 10px;
+.advantages-header {
+  background: linear-gradient(135deg, #008b5d 0%, #55f58d 100%)
 }
 
-.others p {
-  color: #7f1d1d;
-  margin: 0;
-  font-weight: 500;
+.disadvantages-header {
+  background: linear-gradient(135deg, #ff7777a3 0%, #b10000 100%);
 }
 
-.vs {
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: #6b7280;
-  padding: 10px;
-  background: white;
+.card-icon {
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 20px auto;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
-.us {
-  text-align: center;
-  padding: 20px;
-  background: #dcfce7;
-  border-radius: 8px;
-  border-left: 4px solid #22c55e;
+.advantages-icon {
+  background: #fef3c7;
+  color: #059669;
 }
 
-.us h4 {
-  color: #16a34a;
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-bottom: 10px;
+.disadvantages-icon {
+  background: #fef3c7;
+  color: #dc2626;
 }
 
-.us p {
-  color: #14532d;
+.card-header h3 {
+  color: white;
+  font-family: 'Europa Grotesk', 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.card-header p {
+  color: rgba(255, 255, 255, 0.9);
   margin: 0;
+  font-size: 0.95rem;
+}
+
+.card-content {
+  padding: 30px;
+}
+
+.advantage-item,
+.disadvantage-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.advantage-item {
+  background: rgba(16, 185, 129, 0.05);
+}
+
+.disadvantage-item {
+  background: rgba(239, 68, 68, 0.05);
+}
+
+.advantage-item:hover {
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.disadvantage-item:hover {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.advantage-item:last-child,
+.disadvantage-item:last-child {
+  margin-bottom: 0;
+}
+
+.check-icon,
+.cross-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.check-icon {
+  background: #10b981;
+  color: white;
+}
+
+.cross-icon {
+  background: #ef4444;
+  color: white;
+}
+
+.advantage-item p,
+.disadvantage-item p {
+  margin: 0;
+  color: #374151;
+  line-height: 1.5;
   font-weight: 500;
 }
 
 .differential-support {
   text-align: center;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #4f46e5;
-  margin-top: 50px;
+  font-size: 1.1rem;
+  color: #475569;
   font-style: italic;
+  margin: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
+  .advantages-disadvantages {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
   .differential-section .section-title {
     font-size: 2rem;
   }
   
-  .comparison-item {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    text-align: center;
+  .card-header {
+    padding: 25px 20px;
   }
   
-  .vs {
-    justify-self: center;
+  .card-content {
+    padding: 25px 20px;
   }
 }

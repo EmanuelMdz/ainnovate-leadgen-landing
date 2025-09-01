@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HeroSection from './components/HeroSection/HeroSection';
 import ProblemSection from './components/ProblemSection/ProblemSection';
 import SolutionSection from './components/SolutionSection/SolutionSection';
@@ -8,11 +9,13 @@ import GuaranteeSection from './components/GuaranteeSection/GuaranteeSection';
 import UrgencySection from './components/UrgencySection/UrgencySection';
 import FinalCTASection from './components/FinalCTASection/FinalCTASection';
 import FAQSection from './components/FAQSection/FAQSection';
+import Footer from './components/Footer/Footer';
+import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 import './styles/main.css';
 
-function App() {
+function HomePage() {
   return (
-    <div className="App">
+    <>
       <HeroSection />
       <ProblemSection />
       <SolutionSection />
@@ -22,7 +25,21 @@ function App() {
       <UrgencySection />
       <FinalCTASection />
       <FAQSection />
-    </div>
+      <Footer />
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

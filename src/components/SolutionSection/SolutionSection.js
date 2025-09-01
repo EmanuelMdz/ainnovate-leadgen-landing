@@ -13,7 +13,9 @@ function SolutionSection() {
         </p>
         <div className="solution-pillars">
           <div className="pillar">
-            <div className="pillar-icon">🤖</div>
+            <div className="pillar-icon">
+              <img src="/dianarayoai/2.svg" alt="IA" />
+            </div>
             <h3>IA + Personalización Avanzada</h3>
             <ul>
               <li>Scrapeamos la web de la empresa y el LinkedIn del prospecto</li>
@@ -22,7 +24,9 @@ function SolutionSection() {
             </ul>
           </div>
           <div className="pillar">
-            <div className="pillar-icon">⚡</div>
+            <div className="pillar-icon">
+              <img src="/dianarayoai/3.svg" alt="Infraestructura" />
+            </div>
             <h3>Infraestructura lista para escalar</h3>
             <ul>
               <li>+10 cuentas de correo dedicadas trabajando 24/7</li>
@@ -31,7 +35,9 @@ function SolutionSection() {
             </ul>
           </div>
           <div className="pillar">
-            <div className="pillar-icon">🎯</div>
+            <div className="pillar-icon">
+              <img src="/dianarayoai/4.svg" alt="Métricas" />
+            </div>
             <h3>Sin métricas de vanidad</h3>
             <ul>
               <li>No trackeamos aperturas que afectan la entregabilidad</li>

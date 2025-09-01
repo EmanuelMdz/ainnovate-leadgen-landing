@@ -1,4 +1,4 @@
-/* HeroSection.css - Styles specific to the hero section */
+/* Hero Section Styles */
 
 .hero {
   position: relative;
@@ -132,10 +132,12 @@
 }
 
 .hero__title {
+  font-family: Arial, sans-serif;
   font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
   line-height: 1.1;
-  margin-bottom: 2rem;
-  font-weight: 300; /* Cambiado de 700 a 300 para hacerlo más fino */
+  color: white;
   transition: transform 0.3s ease;
 }
 
@@ -185,7 +187,7 @@
   border-radius: 30px !important;
   color: white !important;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
   position: relative;
   overflow: hidden;
   transform: scale(1);
