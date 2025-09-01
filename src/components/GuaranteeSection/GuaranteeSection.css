@@ -1,0 +1,70 @@
+/* SECCIÓN GARANTÍA */
+.guarantee-section {
+  padding: 100px 0;
+  background: #1e293b;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.guarantee-box {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  padding: 60px 40px;
+  border-radius: 20px;
+  border: 3px solid #fbbf24;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.guarantee-box::before {
+  content: "🛡️";
+  font-size: 4rem;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1e293b;
+  padding: 10px 20px;
+  border-radius: 50%;
+  border: 3px solid #fbbf24;
+}
+
+.guarantee-title {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.guarantee-text {
+  color: #e2e8f0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.guarantee-footer {
+  color: #fbbf24;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.guarantee-footer em {
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .guarantee-box {
+    padding: 40px 25px;
+  }
+}

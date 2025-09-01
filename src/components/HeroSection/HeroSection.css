@@ -295,7 +295,7 @@
 .hero__image {
   flex: 1;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
  /* Cambiado de center a flex-end para alinear al borde inferior */
   animation: fadeInRight 1s ease-out 0.5s both;
 }
@@ -516,3 +516,4 @@
     max-height: 200px;
   }
 }
+

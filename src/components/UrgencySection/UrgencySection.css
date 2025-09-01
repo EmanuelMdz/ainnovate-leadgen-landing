@@ -1,0 +1,99 @@
+/* SECCIÓN URGENCIA */
+.urgency-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+}
+
+.urgency-section .section-title {
+  color: #92400e;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.consequences {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.consequence {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(146, 64, 14, 0.1);
+  border-left: 4px solid #f59e0b;
+  transition: transform 0.3s ease;
+}
+
+.consequence:hover {
+  transform: translateY(-3px);
+}
+
+.warning-icon {
+  font-size: 1.5rem;
+  color: #f59e0b;
+  flex-shrink: 0;
+}
+
+.consequence p {
+  margin: 0;
+  color: #92400e;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.powerful-quote {
+  background: #92400e;
+  color: white;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 12px 32px rgba(146, 64, 14, 0.3);
+}
+
+.powerful-quote::before {
+  content: '"';
+  font-size: 4rem;
+  position: absolute;
+  top: -10px;
+  left: 30px;
+  color: #fbbf24;
+  font-family: serif;
+}
+
+.powerful-quote p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .consequences {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .powerful-quote::before {
+    left: 20px;
+    font-size: 3rem;
+  }
+}
