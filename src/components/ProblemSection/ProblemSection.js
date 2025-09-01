@@ -1,5 +1,8 @@
 import React from 'react';
 import './ProblemSection.css';
+import image5 from '../../assets/images/5.png';
+import image6 from '../../assets/images/6.png';
+import image7 from '../../assets/images/7.png';
 
 function ProblemSection() {
   return (
@@ -14,35 +17,46 @@ function ProblemSection() {
         
         <div className="problems-grid">
           <div className="problem-card">
-            <div className="problem-number">01</div>
-            <div className="problem-content">
-              <div className="problem-icon">
-                <img src="/logoscaracteristicas/2.svg" alt="Fuego" />
-              </div>
-              <h3>Vives apagando incendios</h3>
-              <p>No sabes de dónde vendrá la próxima venta y eso te genera ansiedad constante</p>
+            <div className="card-header" style={{backgroundImage: `url(${image5})`}}>
+              <div className="problem-number">01</div>
+            </div>
+            <div className="card-content">
+              <h3>Leads de baja calidad</h3>
+              <p>
+                Inviertes tiempo y dinero en campañas que atraen personas que no están realmente interesadas en tu propuesta.
+              </p>
+              <button className="read-more-btn">
+                Leer más
+                <span className="arrow">→</span>
+              </button>
             </div>
           </div>
           
           <div className="problem-card">
-            <div className="problem-number">02</div>
-            <div className="problem-content">
-              <div className="problem-icon">
-                <img src="/logoscaracteristicas/3.svg" alt="Tiempo" />
-              </div>
+            <div className="card-header" style={{backgroundImage: `url(${image6})`}}>
+              <div className="problem-number">02</div>
+            </div>
+            <div className="card-content">
               <h3>Pierdes tiempo persiguiendo leads tibios</h3>
               <p>Probaste ads, freelancers, campañas sueltas... nada te dio un sistema real</p>
+              <button className="read-more-btn">
+                Leer más
+                <span className="arrow">↗</span>
+              </button>
             </div>
           </div>
           
           <div className="problem-card">
-            <div className="problem-number">03</div>
-            <div className="problem-content">
-              <div className="problem-icon">
-                <img src="/logoscaracteristicas/4.svg" alt="Crecimiento" />
-              </div>
+            <div className="card-header" style={{backgroundImage: `url(${image7})`}}>
+              <div className="problem-number">03</div>
+            </div>
+            <div className="card-content">
               <h3>Ves crecer a otros con menos talento</h3>
               <p>Solo porque tienen sistemas de adquisición que funcionan en automático</p>
+              <button className="read-more-btn">
+                Leer más
+                <span className="arrow">↗</span>
+              </button>
             </div>
           </div>
         </div>

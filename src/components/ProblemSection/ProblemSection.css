@@ -75,6 +75,8 @@
   transition: all 0.4s ease;
   position: relative;
   border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
 }
 
 .problem-card:hover {
@@ -83,14 +85,26 @@
   border-color: #0f0097;
 }
 
+.card-header {
+  height: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
 .problem-number {
   position: absolute;
   top: 20px;
   right: 20px;
   width: 40px;
   height: 40px;
-  background: linear-gradient(135deg, #0015d3 0%, #011570 100%);
-  color: white;
+  background: rgba(255, 255, 255, 0.9);
+  color: #130073;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -100,39 +114,57 @@
   z-index: 2;
 }
 
-.problem-content {
-  padding: 40px 30px;
-  text-align: center;
-  position: relative;
-}
 
-.problem-icon {
-  margin-bottom: 25px;
+.card-content {
+  padding: 30px 25px;
+  text-align: left;
+  flex: 1;
   display: flex;
-  justify-content: center;
-}
-
-.problem-icon img {
-  width: 70px;
-  height: 70px;
-  object-fit: contain;
-  filter: none;
-  display: block;
+  flex-direction: column;
 }
 
 .problem-card h3 {
+  color: #130073;
   font-size: 1.4rem;
   font-weight: 700;
-  color: #130073;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   line-height: 1.3;
 }
 
 .problem-card p {
   color: #666;
   line-height: 1.6;
-  margin: 0;
+  margin: 0 0 20px 0;
   font-size: 1rem;
+  flex: 1;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #130073;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.read-more-btn:hover {
+  color: #0043fd;
+}
+
+.read-more-btn .arrow {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.read-more-btn:hover .arrow {
+  transform: translate(2px, -2px);
 }
 
 .problem-cta {

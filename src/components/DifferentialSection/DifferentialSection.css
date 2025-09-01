@@ -44,6 +44,13 @@
   position: relative;
 }
 
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .advantages-header {
   background: linear-gradient(135deg, #008b5d 0%, #55f58d 100%)
 }
@@ -79,14 +86,17 @@
   font-family: 'Europa Grotesk', 'Montserrat', sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   letter-spacing: 1px;
+  display: block;
 }
 
 .card-header p {
   color: rgba(255, 255, 255, 0.9);
   margin: 0;
   font-size: 0.95rem;
+  display: block;
+  margin-top: 8px;
 }
 
 .card-content {

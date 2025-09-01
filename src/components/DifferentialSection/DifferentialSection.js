@@ -11,11 +11,13 @@ function DifferentialSection() {
         <div className="advantages-disadvantages">
           <div className="advantages-card">
             <div className="card-header advantages-header">
-              <div className="card-icon advantages-icon">
-                <span>✓</span>
+              <div className="header-content">
+                <div className="card-icon advantages-icon">
+                  <span>✓</span>
+                </div>
+                <h3>VENTAJAS</h3>
+                <p>De usar nuestro sistema de IA</p>
               </div>
-              <h3>VENTAJAS</h3>
-              <p>De usar nuestro sistema de IA</p>
             </div>
             <div className="card-content">
               <div className="advantage-item">
@@ -43,11 +45,13 @@ function DifferentialSection() {
           
           <div className="disadvantages-card">
             <div className="card-header disadvantages-header">
-              <div className="card-icon disadvantages-icon">
-                <span>✗</span>
+              <div className="header-content">
+                <div className="card-icon disadvantages-icon">
+                  <span>✗</span>
+                </div>
+                <h3>DESVENTAJAS</h3>
+                <p>De seguir como hasta ahora</p>
               </div>
-              <h3>DESVENTAJAS</h3>
-              <p>De seguir como hasta ahora</p>
             </div>
             <div className="card-content">
               <div className="disadvantage-item">
