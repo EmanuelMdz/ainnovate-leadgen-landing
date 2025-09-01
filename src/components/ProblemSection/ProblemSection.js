@@ -25,10 +25,6 @@ function ProblemSection() {
               <p>
                 Inviertes tiempo y dinero en campañas que atraen personas que no están realmente interesadas en tu propuesta.
               </p>
-              <button className="read-more-btn">
-                Leer más
-                <span className="arrow">→</span>
-              </button>
             </div>
           </div>
           
@@ -39,10 +35,6 @@ function ProblemSection() {
             <div className="card-content">
               <h3>Pierdes tiempo persiguiendo leads tibios</h3>
               <p>Probaste ads, freelancers, campañas sueltas... nada te dio un sistema real</p>
-              <button className="read-more-btn">
-                Leer más
-                <span className="arrow">↗</span>
-              </button>
             </div>
           </div>
           
@@ -53,19 +45,22 @@ function ProblemSection() {
             <div className="card-content">
               <h3>Ves crecer a otros con menos talento</h3>
               <p>Solo porque tienen sistemas de adquisición que funcionan en automático</p>
-              <button className="read-more-btn">
-                Leer más
-                <span className="arrow">↗</span>
-              </button>
             </div>
           </div>
         </div>
         
-        <div className="problem-cta">
+       
           <div className="cta-content">
             <h4>¿Te suena familiar?</h4>
             <p>Es hora de cambiar el juego y tener un sistema que trabaje para ti, no al revés.</p>
           </div>
+    
+        
+        <div className="external-cta">
+          <a href="/como-lo-hacemos" className="primary-cta-button">
+            Cómo lo Hacemos
+            <span className="arrow">→</span>
+          </a>
         </div>
       </div>
     </section>

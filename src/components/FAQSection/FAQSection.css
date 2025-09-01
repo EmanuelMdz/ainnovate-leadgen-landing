@@ -36,7 +36,6 @@
 
 .faq-item {
   border-bottom: 1px solid #e5e7eb;
-  transition: all 0.2s ease;
 }
 
 .faq-item:last-child {
@@ -71,7 +70,7 @@
 .faq-arrow {
   font-size: 1rem;
   color: #9ca3af;
-  transition: transform 0.3s ease;
+  transition: transform 0.15s ease-out;
   margin-left: 20px;
   transform: rotate(0deg);
 }
@@ -83,15 +82,14 @@
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, opacity 0.3s ease;
+  transition: max-height 0.2s ease-out, padding 0.2s ease-out;
   background: transparent;
-  opacity: 0;
+  padding-bottom: 0;
 }
 
 .faq-answer.open {
-  max-height: 200px;
+  max-height: 120px;
   padding-bottom: 20px;
-  opacity: 1;
 }
 
 .faq-answer p {

@@ -12,6 +12,7 @@ import FinalCTASection from './components/FinalCTASection/FinalCTASection';
 import FAQSection from './components/FAQSection/FAQSection';
 import Footer from './components/Footer/Footer';
 import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
+import ComoLoHacemos from './components/ComoLoHacemos/ComoLoHacemos';
 import './styles/main.css';
 
 function HomePage() {
@@ -39,6 +40,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/como-lo-hacemos" element={<ComoLoHacemos />} />
         </Routes>
       </div>
     </Router>

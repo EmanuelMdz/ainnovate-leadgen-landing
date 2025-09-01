@@ -25,11 +25,10 @@ function HeroSection() {
           </div>
           <nav className={`main-nav ${isMenuOpen ? 'active' : ''}`}>
             <ul>
-              <li><a href="#home" onClick={toggleMenu}>Home</a></li>
-              <li><a href="#features" onClick={toggleMenu}>Features</a></li>
-              <li><a href="#about" onClick={toggleMenu}>About</a></li>
-              <li><a href="#service" onClick={toggleMenu}>Service</a></li>
-              <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+              <li><a href="/" onClick={toggleMenu}>Inicio</a></li>
+              <li><a href="#about" onClick={toggleMenu}>Sobre Nosotros</a></li>
+              <li><a href="/como-lo-hacemos" onClick={toggleMenu}>Cómo lo hacemos</a></li>
+              <li><a href="#contact" onClick={toggleMenu}>Contacto</a></li>
             </ul>
           </nav>
           <div className="hamburger" onClick={toggleMenu}>

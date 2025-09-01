@@ -168,8 +168,51 @@
 }
 
 .problem-cta {
+  margin-top: 60px;
   text-align: center;
-  margin-top: 50px;
+  background: linear-gradient(135deg, #130073 0%, #1a0a8a 100%);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(19, 0, 115, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.external-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.primary-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #013bee 0%, #0043fd 100%);
+  color: white;
+  text-decoration: none;
+  padding: 18px 40px;
+  border-radius: 50px;
+  font-family: 'Europa Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(1, 59, 238, 0.3);
+  border: 2px solid transparent;
+}
+
+.primary-cta-button:hover {
+  background: linear-gradient(135deg, #0043fd 0%, #013bee 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(1, 59, 238, 0.4);
+}
+
+.primary-cta-button .arrow {
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+}
+
+.primary-cta-button:hover .arrow {
+  transform: translateX(5px);
 }
 
 .cta-content {
@@ -180,6 +223,7 @@
   max-width: 800px;
   margin: 0 auto;
   box-shadow: 0 15px 35px rgba(19, 0, 115, 0.2);
+  text-align: center;
 }
 
 .cta-content h4 {

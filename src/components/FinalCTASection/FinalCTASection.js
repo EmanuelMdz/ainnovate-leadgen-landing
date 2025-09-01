@@ -18,7 +18,7 @@ function FinalCTASection() {
   }, []);
 
   return (
-    <section className="final-cta-section">
+    <section id="contact" className="final-cta-section">
       <div className="container">
         <h2 className="cta-title">Empezá a llenar tu agenda hoy</h2>
         <p className="cta-subtitle">
