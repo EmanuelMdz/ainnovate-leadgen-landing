@@ -1,7 +1,76 @@
-# Ainnovate Lead Gen Agency - Project Documentation
+# Ainnovate Landing Page - Project Documentation
 
-## Project Overview
-This is a React-based landing page for Ainnovate Lead Gen Agency. The website showcases the company's AI-powered lead generation services with a modern, responsive design.
+## Overview
+This is a React-based landing page for Ainnovate, a lead generation service using artificial intelligence.
+
+## Current Implementation Analysis
+
+### Component Structure
+**HeroSection.js** - Main component containing:
+- Header with logo, navigation, hamburger menu, and social icons
+- Hero content with title, description, and CTA button
+- Hero image (hidden on mobile)
+
+### Critical Issues Found
+
+#### 1. **Duplicate HTML Elements**
+- **PROBLEM**: Two `.menu-toggle` buttons exist in the HTML (lines 34-40 and 52-56)
+- **IMPACT**: Second button appears in desktop view when it should be hidden
+- **SOLUTION**: Remove duplicate button (lines 52-56)
+
+#### 2. **CSS Conflicts**
+- **PROBLEM**: Multiple conflicting rules for `.main-nav` in mobile media query
+- **IMPACT**: Navigation styles override each other
+- **SOLUTION**: Consolidate mobile navigation styles
+
+#### 3. **Grid Layout Issues**
+- **DESKTOP**: `grid-template-columns: auto 1fr auto` (logo | nav | social)
+- **MOBILE**: Uses grid-areas but hamburger placement breaks layout
+
+### Current CSS Structure
+
+#### Desktop Layout (Default)
+```css
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* logo | nav | social */
+}
+.hamburger { display: none !important; }
+```
+
+#### Mobile Layout (@media max-width: 768px)
+```css
+.header {
+  grid-template-columns: 1fr auto auto auto;
+  grid-template-areas: "logo nav hamburger social";
+}
+.hamburger { display: block; }
+.main-nav { display: none; }
+.main-nav.active { display: flex; }
+```
+
+### Animation System
+- **Entrance animations**: fadeInDown (header), fadeInLeft (text), fadeInRight (image)
+- **Hover effects**: Scale transforms on title, description, image, and button
+- **Button effects**: Sliding blue fill + shimmer animation
+- **Hamburger animation**: Transforms to X when active
+
+### Responsive Breakpoints
+- **1024px**: Tablet layout adjustments
+- **768px**: Mobile layout with hamburger menu
+- **480px**: Small mobile optimizations
+
+## Assets
+- Custom logo: `logo_ainnovate_svg_blanco_horizontal.svg`
+- Social icons: `ig.svg`, `lk.svg`, `yt.svg`
+- Background image: `bg-landing.png`
+- Hero image: `hero-person.png`
+
+## Technologies Used
+- React with useState hook for menu toggle
+- CSS3 with Grid and Flexbox
+- Custom keyframe animations
+- Media queries for responsive design
 
 ## Project Structure
 
