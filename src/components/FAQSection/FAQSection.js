@@ -15,7 +15,7 @@ function FAQSection() {
     },
     {
       question: "¿Cuánto tiempo toma ver resultados?",
-      answer: "Los primeros leads calificados empiezan a llegar entre la semana 2-3. El sistema alcanza su máximo rendimiento al mes."
+      answer: "Los primeros leads calificados empiezan a llegar entre la semana 3-4. El sistema alcanza su máximo rendimiento al mes."
     },
     {
       question: "¿Qué pasa si no funciona?",
