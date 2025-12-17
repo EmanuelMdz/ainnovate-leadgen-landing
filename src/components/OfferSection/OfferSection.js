@@ -32,7 +32,7 @@ function OfferSection() {
   }, [hasAnimated]);
 
   const animateCounter = () => {
-    const target = 36000;
+    const target = 18000;
     const duration = 3000; // 2.5 seconds
     const startTime = Date.now();
 

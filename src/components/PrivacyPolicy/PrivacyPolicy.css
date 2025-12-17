@@ -1,90 +1,116 @@
 .privacy-policy {
   min-height: 100vh;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-  padding: 80px 0;
+  background: var(--bg-dark);
+  padding: 120px 0;
+  position: relative;
+}
+
+.privacy-policy::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(0, 67, 253, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(112, 0, 255, 0.05) 0%, transparent 40%);
+  pointer-events: none;
 }
 
 .privacy-content {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  background: white;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop);
+  -webkit-backdrop-filter: var(--glass-backdrop);
   padding: 60px;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
 }
 
 .privacy-content h1 {
   font-family: 'Europa Grotesk', 'Montserrat', sans-serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
-  color: #130073;
+  color: white;
   margin-bottom: 10px;
   text-align: center;
+  background: linear-gradient(to right, #fff, #a5b4fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .last-updated {
   text-align: center;
-  color: #64748b;
+  color: var(--text-secondary);
   font-size: 0.9rem;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   font-style: italic;
 }
 
 .privacy-content section {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .privacy-content h2 {
   font-family: 'Europa Grotesk', 'Montserrat', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
-  color: #130073;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #e2e8f0;
-  padding-bottom: 8px;
+  color: var(--accent-cyan);
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 10px;
 }
 
 .privacy-content p {
-  color: #475569;
+  color: var(--text-secondary);
   line-height: 1.7;
   margin-bottom: 15px;
+  font-size: 1.05rem;
 }
 
 .privacy-content ul {
-  color: #475569;
+  color: var(--text-secondary);
   line-height: 1.7;
   margin-left: 20px;
   margin-bottom: 15px;
+  font-size: 1.05rem;
 }
 
 .privacy-content li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .back-link {
   text-align: center;
-  margin-top: 50px;
-  padding-top: 30px;
-  border-top: 1px solid #e2e8f0;
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .back-button {
-  background: linear-gradient(135deg, #130073 0%, #0043fd 100%);
+  background: var(--gradient-primary);
   color: white;
   border: none;
-  padding: 12px 30px;
-  border-radius: 25px;
+  padding: 14px 35px;
+  border-radius: 100px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 10px 25px rgba(0, 67, 253, 0.3);
 }
 
 .back-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(19, 0, 115, 0.3);
+  box-shadow: 0 15px 35px rgba(0, 67, 253, 0.4);
 }
 
 /* RESPONSIVE DESIGN */

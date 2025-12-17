@@ -54,9 +54,10 @@ function HeroSection() {
         <div className="hero__content">
           <div className="hero__text">
             <h1 className="hero__title">
-              LA NUEVA FORMA DE GENERAR <span className="hero__highlight">LEADS CON IA</span>: 
-              <span  > AUTOMÁTICA,</span> 
-              <span >PRECISA Y <span className="hero__highlight">CONSTANTE</span></span>
+              LA NUEVA FORMA DE <br />
+              GENERAR <span className="hero__highlight">LEADS CON IA</span>:<br />
+              AUTOMÁTICA, PRECISA <br />
+              Y <span className="hero__highlight">CONSTANTE</span>
             </h1>
             <p className="hero__description">
               En Ainnovate usamos inteligencia artificial para que consigas nuevos clientes todos los días, sin invertir

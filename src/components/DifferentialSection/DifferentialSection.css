@@ -1,18 +1,22 @@
 /* SECCIÓN DIFERENCIAL */
 .differential-section {
-  padding: 100px 0;
-  background: #f8fafc;
+  padding: 120px 0;
+  background: transparent;
   position: relative;
+  overflow: hidden;
 }
 
 .differential-section .section-title {
   font-family: 'Europa Grotesk', 'Montserrat', sans-serif;
-  color: #130073;
-  font-size: 2.4rem;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 800;
   text-align: center;
   margin-bottom: 60px;
   line-height: 1.2;
+  background: linear-gradient(to right, #fff, var(--accent-cyan));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .advantages-disadvantages {
@@ -25,23 +29,29 @@
 
 .advantages-card,
 .disadvantages-card {
-  background: #ffffff;
-  border-radius: 20px;
+  background: var(--glass-bg);
+  border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: var(--glass-backdrop);
+  -webkit-backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--glass-border);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .advantages-card:hover,
 .disadvantages-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
 }
 
 .card-header {
-  padding: 30px;
+  padding: 40px;
   text-align: center;
   position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .header-content {
@@ -52,66 +62,72 @@
 }
 
 .advantages-header {
-  background: linear-gradient(135deg, #008b5d 0%, #55f58d 100%)
+  background: linear-gradient(135deg, rgba(0, 139, 93, 0.2) 0%, rgba(85, 245, 141, 0.1) 100%);
 }
 
 .disadvantages-header {
-  background: linear-gradient(135deg, #ff7777a3 0%, #b10000 100%);
+  background: linear-gradient(135deg, rgba(177, 0, 0, 0.2) 0%, rgba(255, 119, 119, 0.1) 100%);
 }
 
 .card-icon {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 20px auto;
-  font-size: 1.8rem;
+  margin: 0 auto 24px auto;
+  font-size: 2rem;
   font-weight: bold;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .advantages-icon {
-  background: #fef3c7;
-  color: #059669;
+  background: rgba(5, 150, 105, 0.2);
+  color: #34d399;
+  border-color: #059669;
 }
 
 .disadvantages-icon {
-  background: #fef3c7;
-  color: #dc2626;
+  background: rgba(220, 38, 38, 0.2);
+  color: #f87171;
+  border-color: #dc2626;
 }
 
 .card-header h3 {
   color: white;
   font-family: 'Europa Grotesk', 'Montserrat', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 12px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   display: block;
 }
 
 .card-header p {
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--text-secondary);
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 1rem;
   display: block;
-  margin-top: 8px;
+  font-weight: 300;
 }
 
 .card-content {
-  padding: 30px;
+  padding: 40px;
 }
 
 .advantage-item,
 .disadvantage-item {
   display: flex;
   align-items: flex-start;
-  gap: 15px;
+  gap: 16px;
   margin-bottom: 20px;
-  padding: 15px;
-  border-radius: 12px;
+  padding: 16px;
+  border-radius: 16px;
   transition: all 0.2s ease;
+  border: 1px solid transparent;
 }
 
 .advantage-item {
@@ -124,10 +140,12 @@
 
 .advantage-item:hover {
   background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.2);
 }
 
 .disadvantage-item:hover {
   background: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.2);
 }
 
 .advantage-item:last-child,
@@ -137,45 +155,53 @@
 
 .check-icon,
 .cross-icon {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: bold;
   flex-shrink: 0;
   margin-top: 2px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .check-icon {
-  background: #10b981;
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
   color: white;
 }
 
 .cross-icon {
-  background: #ef4444;
+  background: linear-gradient(135deg, #b91c1c 0%, #ef4444 100%);
   color: white;
 }
 
 .advantage-item p,
 .disadvantage-item p {
   margin: 0;
-  color: #374151;
-  line-height: 1.5;
-  font-weight: 500;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 1.05rem;
+}
+
+.advantage-item:hover p,
+.disadvantage-item:hover p {
+  color: var(--text-primary);
 }
 
 .differential-support {
   text-align: center;
-  font-size: 1.1rem;
-  color: #475569;
+  font-size: 1.2rem;
+  color: var(--text-muted);
   font-style: italic;
   margin: 0;
-  max-width: 700px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  font-weight: 300;
 }
 
 /* RESPONSIVE DESIGN */
@@ -186,14 +212,14 @@
   }
   
   .differential-section .section-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   
   .card-header {
-    padding: 25px 20px;
+    padding: 30px 20px;
   }
   
   .card-content {
-    padding: 25px 20px;
+    padding: 30px 20px;
   }
 }

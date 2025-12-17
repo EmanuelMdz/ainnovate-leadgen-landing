@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.514f6fc2.css",
+    "main.js": "/static/js/main.8faa61e5.js",
+    "static/media/Dashboard Card Ainnovate (Fondo de pantalla).png": "/static/media/Dashboard Card Ainnovate (Fondo de pantalla).fcb3a921563da66013f6.png",
+    "static/media/5.png": "/static/media/5.4ce0e66ea494fe454964.png",
+    "static/media/7.png": "/static/media/7.0771e67bd10a0ce7352d.png",
+    "static/media/6.png": "/static/media/6.4f8fc96f279e7c18416b.png",
+    "static/media/AloeveraDisplay-ExtraLight.ttf": "/static/media/AloeveraDisplay-ExtraLight.60f1dd7a3277ec3ae9ed.ttf",
+    "static/media/AloeveraDisplay-ExtraBold.ttf": "/static/media/AloeveraDisplay-ExtraBold.a31dc59e8d0cee1c9b96.ttf",
+    "static/media/AloeveraDisplay-SemiBold.ttf": "/static/media/AloeveraDisplay-SemiBold.30033813415f93405a8d.ttf",
+    "static/media/AloeveraDisplay-Light.ttf": "/static/media/AloeveraDisplay-Light.3510a438c2f25eae77ba.ttf",
+    "static/media/AloeveraDisplay-Black.ttf": "/static/media/AloeveraDisplay-Black.6887ff4e68cec77fab78.ttf",
+    "static/media/AloeveraDisplay-Medium.ttf": "/static/media/AloeveraDisplay-Medium.826235f81466abf09a1b.ttf",
+    "static/media/AloeveraDisplay-Regular.ttf": "/static/media/AloeveraDisplay-Regular.1c8b5cb892d952f4846f.ttf",
+    "static/media/AloeveraDisplay-Bold.ttf": "/static/media/AloeveraDisplay-Bold.72440a04ec26f84f3d1e.ttf",
+    "static/media/AloeveraDisplay-Thin.ttf": "/static/media/AloeveraDisplay-Thin.cbded66693463ddff19c.ttf",
+    "static/media/europa-grotesk-sh-bold.ttf": "/static/media/europa-grotesk-sh-bold.e410b01ead0b02b4a9c1.ttf",
+    "index.html": "/index.html",
+    "main.514f6fc2.css.map": "/static/css/main.514f6fc2.css.map",
+    "main.8faa61e5.js.map": "/static/js/main.8faa61e5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.514f6fc2.css",
+    "static/js/main.8faa61e5.js"
+  ]
+}

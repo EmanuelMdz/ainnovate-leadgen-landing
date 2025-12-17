@@ -19,7 +19,7 @@ function FAQSection() {
     },
     {
       question: "¿Qué pasa si no funciona?",
-      answer: "Tenemos nuestra garantía: si no cumplimos con los 36,000 emails o no entregamos leads calificados, extendemos sin costo."
+      answer: "Tenemos nuestra garantía: si no cumplimos con los 18,000 emails o no entregamos leads calificados, extendemos sin costo."
     },
     {
       question: "¿Es legal el cold email?",

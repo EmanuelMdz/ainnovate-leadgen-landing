@@ -1,5 +1,6 @@
 /* main.css - Global styles for Ainnovate Lead Gen Agency */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* Europa Grotesk Font */
 @font-face {
@@ -13,77 +14,42 @@
 /* Alovera Display Fonts */
 @font-face {
   font-family: 'Alovera Display';
-  src: url('../../public/fonts/AloeveraDisplay-Thin.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Alovera Display';
-  src: url('../../public/fonts/AloeveraDisplay-ExtraLight.ttf') format('truetype');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Alovera Display';
-  src: url('../../public/fonts/AloeveraDisplay-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Alovera Display';
   src: url('../../public/fonts/AloeveraDisplay-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Alovera Display';
-  src: url('../../public/fonts/AloeveraDisplay-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+:root {
+  /* Brand Colors */
+  --primary-blue: #0043fd;
+  --secondary-blue: #130073;
+  --accent-cyan: #00f2ff;
+  --accent-purple: #7000ff;
+  
+  /* Backgrounds */
+  --bg-dark: #050511;
+  --bg-darker: #020205;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  
+  /* Text */
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-muted: rgba(255, 255, 255, 0.5);
+  
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --glass-backdrop: blur(12px);
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  --gradient-glow: linear-gradient(135deg, rgba(0, 67, 253, 0.2) 0%, rgba(19, 0, 115, 0.2) 100%);
+  --gradient-text: linear-gradient(to right, #ffffff, #a5b4fc);
 }
 
-@font-face {
-  font-family: 'Alovera Display';
-  src: url('../../public/fonts/AloeveraDisplay-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Alovera Display';
-  src: url('../../public/fonts/AloeveraDisplay-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Alovera Display';
-  src: url('../../public/fonts/AloeveraDisplay-ExtraBold.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Alovera Display';
-  src: url('../../public/fonts/AloeveraDisplay-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* CSS Reset */
+/* CSS Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -95,101 +61,152 @@ html {
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Inter', 'Montserrat', sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: var(--text-primary);
+  background-color: var(--bg-dark);
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(0, 67, 253, 0.08) 0%, transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(112, 0, 255, 0.08) 0%, transparent 25%);
+  overflow-x: hidden;
 }
 
 /* Container */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Europa Grotesk', 'Montserrat', sans-serif;
   font-weight: 700;
-  margin-bottom: 1rem;
-  line-height: 1.2;
+  line-height: 1.1;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
 }
 
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 2rem;
-}
+h1 { font-size: 3.5rem; letter-spacing: -0.02em; }
+h2 { font-size: 2.75rem; letter-spacing: -0.01em; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.5rem; }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
 }
 
-/* Secondary text fonts */
-p,
-.main-nav a,
-.btn,
-.hero__description,
-.hero__subheading,
-.hero__cta,
-.social-icons {
-  font-family: 'Alovera Display', sans-serif;
+/* Utility Classes */
+.text-gradient {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop);
+  -webkit-backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  box-shadow: var(--glass-shadow);
+}
+
+.glass-panel {
+  background: rgba(19, 0, 115, 0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
 }
 
 /* Buttons */
 .btn {
-  display: inline-block;
-  background: linear-gradient(135deg, #0043fd 0%, #130073 100%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-blue);
   color: white;
-  padding: 1rem 2rem;
-  border-radius: 50px;
+  padding: 1rem 2.5rem;
+  border-radius: 100px;
   text-decoration: none;
   font-weight: 600;
+  font-size: 1.1rem;
   cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border: none;
-  box-shadow: 0 8px 25px rgba(19, 0, 115, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 67, 253, 0.3);
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 .btn::before {
   content: '';
   position: absolute;
   top: 0;
-  left: -100%;
+  left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s;
+  background: linear-gradient(135deg, #0043fd 0%, #7000ff 100%);
+  z-index: -1;
+  transition: opacity 0.3s ease;
+  opacity: 1;
 }
 
 .btn:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 15px 35px rgba(19, 0, 115, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(0, 67, 253, 0.5);
 }
 
 .btn:hover::before {
-  left: 100%;
+  opacity: 0.8;
 }
 
-/* Ainnovate specific colors */
-:root {
-  --primary-blue: #130073;
-  --secondary-blue: #0043fd;
-  --light-background: #e1e1e1;
-  --white-background: #ffffff;
-  --gradient-bg: linear-gradient(135deg, #013bee 0%, #15055f 100%, #1c1c1d 100%);
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-/* Utilities */
-.text-center {
-  text-align: center;
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Section Spacing */
+section {
+  padding: 80px 0;
+  position: relative;
+}
+
+/* Grid Layouts */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  section { padding: 60px 0; }
 }
