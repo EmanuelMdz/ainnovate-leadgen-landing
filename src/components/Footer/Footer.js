@@ -34,7 +34,7 @@ function Footer() {
           <div className="footer-column">
             <h4>CONTACTO</h4>
             <ul>
-              <li><a href="https://calendly.com/osm-meet/web">AGENDA UNA LLAMADA</a></li>
+              <li><a href="https://calendly.com/ainnovate/web">AGENDA UNA LLAMADA</a></li>
               <li><a href="#about">SOBRE NOSOTROS</a></li>
               <li><a href="#faq">FAQ</a></li>
             </ul>

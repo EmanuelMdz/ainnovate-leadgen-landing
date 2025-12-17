@@ -64,7 +64,7 @@ function HeroSection() {
               enfócate en lo que mejor sabes hacer: cerrar ventas.
             </p>
             <div className="hero__cta">
-              <a href="https://calendly.com/osm-meet/web" target="_blank" rel="noopener noreferrer" className="btn hero__btn">
+              <a href="https://calendly.com/ainnovate/web" target="_blank" rel="noopener noreferrer" className="btn hero__btn">
                 Agenda una llamada gratis
               </a>
             </div>

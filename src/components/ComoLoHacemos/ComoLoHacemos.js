@@ -54,12 +54,12 @@ function ComoLoHacemos() {
                 <h3>🔹 Análisis del mercado y definición del cliente ideal</h3>
                 <p>
                   Investigamos tu mercado y construimos un avatar detallado de tu cliente ideal. Con esa información, 
-                  seleccionamos entre 6.000 y 12.000 prospectos que encajan lo más posible con tu público.
+                  seleccionamos hasta 18.000 prospectos que encajan lo más posible con tu público.
                 </p>
                 <ul className="step-list">
                   <li>Investigación profunda del mercado objetivo</li>
                   <li>Construcción del avatar del cliente ideal</li>
-                  <li>Selección de 6.000 - 12.000 prospectos cualificados</li>
+                  <li>Selección de hasta 18.000 prospectos cualificados</li>
                   <li>Segmentación avanzada por criterios específicos</li>
                 </ul>
               </div>
@@ -120,7 +120,7 @@ function ComoLoHacemos() {
             <h3>¿Listo para implementar este sistema en tu negocio?</h3>
             <div className="calendly-embed">
               <iframe 
-                src="https://calendly.com/osm-meet/web" 
+                src="https://calendly.com/ainnovate/web" 
                 width="100%" 
                 height="800" 
                 frameBorder="0"

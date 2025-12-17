@@ -28,7 +28,7 @@ function FinalCTASection() {
         <div className="calendly-container">
           <div 
             className="calendly-inline-widget" 
-            data-url="https://calendly.com/osm-meet/web" 
+            data-url="https://calendly.com/ainnovate/web" 
             style={{ minWidth: '320px', height: '700px' }}
           ></div>
         </div>
